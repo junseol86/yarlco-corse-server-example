@@ -1,11 +1,18 @@
+# 사용할 언어와 버전
 language: node_js
 node_js: 
   - "14.15"
+
+# 작업 전 수행할 것
 before_install:
   - npm update
+
+# travis 브랜치에서만 수행
 branches:
   only:
     - travis
+
+# 테스트(또는 추가 작업) 후 결과 전송
 notifications:
   email:
     recipients:
